@@ -17,7 +17,16 @@
       <div class="camera"></div>
       <div class="display">
         <div class="artboard artboard-demo phone-2">
-          <h1>Added mony</h1>
+          <div class="flex justify-between w-10/12 mb-3">
+            <h1>Added Mony</h1>
+
+            <div>
+              <span>Balance:</span>
+              <span id="balance" class="font-extrabold">45000</span>
+              <span>৳</span>
+
+            </div>
+          </div>
           <!-- from  -->
           <div class="card bg-base-100 w-11/12 max-w-sm shrink-0 shadow-2xl">
             <form class="card-body">
@@ -31,7 +40,6 @@
                 <option>Dach Bangla Bank</option>
               </select>
 
-
               <div class="form-control">
                 <label class="label">
                   <span class="label-text">Bank Account Number</span>
@@ -42,18 +50,18 @@
                 <label class="label">
                   <span class="label-text">Amount to Add</span>
                 </label>
-                <input type="text" placeholder="Add Amount" class="input input-bordered" required />
+                <input id="addAmount" type="text" placeholder="Add Amount" class="input input-bordered" required />
 
               </div>
               <div class="form-control">
                 <label class="label">
                   <span class="label-text">Password</span>
                 </label>
-                <input type="password" placeholder="password" class="input input-bordered" required />
+                <input id="pinNumber" type="password" placeholder="password" class="input input-bordered" required />
 
               </div>
               <div class="form-control mt-6">
-                <button class="btn btn-primary">Add Money</button>
+                <button id="Add-many-btn" class="btn btn-primary">Add Money</button>
               </div>
             </form>
           </div>
@@ -65,6 +73,10 @@
   </main>
 
 
+
+
+  <!-- <script src="script/homePage.js"></script> -->
+  <script src="./script/addMonyFrom.js"></script>
 
 </body>
 
